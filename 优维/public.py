@@ -146,7 +146,6 @@ class Public(SnmpWalk):
                     self.ChangeResult(self.ResultKeys, self.result, "Brand", key)
                     break
             else:
-                # TODO 无法从描述中获取品牌需单独处理
                 pass
         if value:
             self.BrandObj = value(*self.args, **self.kwargs)

@@ -740,7 +740,6 @@ class Openstack_Process():
             "-1": u"未知"
         }
         for server in server_list:
-            # TODO 云主机
             # print json.dumps(server, indent=2)
             result_dict = {
                 'name': encrypt(str(server.get('id')) + env_name),
